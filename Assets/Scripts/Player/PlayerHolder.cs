@@ -74,9 +74,12 @@ public class PlayerHolder : MonoBehaviour
             rotateIntoContainer.Play();
             DOVirtual.DelayedCall(_pickAnimationDuration, () =>
             {
-                item.transform.parent = _container;
-                item.transform.localPosition = Vector3.zero;
-                item.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                if (holdable as Item != null)
+                {
+                    item.transform.parent = _container;
+                    item.transform.localPosition = Vector3.zero;
+                    item.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                }
             });
         }
     }
