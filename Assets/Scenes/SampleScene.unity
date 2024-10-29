@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b4d1d68ce88ce42a5f1e041dc55399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 250
+  _speed: 650
   _minRotationX: -60
   _maxRotationX: 60
   _input: {fileID: 421523232}
@@ -527,6 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418a0eaf87bbe954eac7130fd0293cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pickUpDistance: 5
   _container: {fileID: 1047231615}
   _input: {fileID: 421523232}
   _camera: {fileID: 963194227}
@@ -1035,7 +1036,7 @@ Transform:
   m_GameObject: {fileID: 1047231614}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.348, z: 0.83699995}
+  m_LocalPosition: {x: 0, y: -0.348, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

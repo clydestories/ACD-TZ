@@ -10,6 +10,7 @@ public class CollectableConsumer : MonoBehaviour
         if (other.TryGetComponent(out ICollectable collectable))
         {
             collectable.Collect();
+            _itemsCollected++;
         }
     }
 }
